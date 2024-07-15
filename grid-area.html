@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .advartise{
+            grid-area: advartise;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container {
+            background-image: #FEEB98;
+            border: 1px solid rgb(118, 114, 52);
+            margin:10px;
+            display: grid;
+            grid-template-areas: 
+                "header header header header"
+                "nav main main sidebar"
+                "nav main main advertising"
+                "foooter footer footer footer"
+            ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header" id="box-1">
+            <h1>The Header</h1>
+        </header>
+        <nav class="nav" id="box-2">
+            <a href="">Nav 1</a>
+            <a href="">Nav 2</a>
+            <a href="">Nav 3</a>
+        </nav>
+        <main class="main" id="box-3">
+            <h1>Main article area</h1>
+            <p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. we go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p>
+        </main>
+        <aside class="sidebar" id="box-4">
+            <h1>Sidebar</h1>
+        </aside>
+        <aside class="advartise" id="box-5">
+            <h1>Advertising</h1>
+        </aside>
+        <footer class="footer" id="box-6">
+            <h1>The footer</h1>
+        </footer>
+    </div>
+</body>
+</html>

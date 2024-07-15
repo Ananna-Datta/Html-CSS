@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise</title>
+    <style>
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .box {
+        height: 200px;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .second img {
+        display: flex;
+        height: 50%;
+      }
+      .box div{
+        flex: 1;
+      }
+      .third{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:5px;
+      }
+      @media screen  and (max-width: 576px){
+        .box{
+          flex-direction: column;
+          height: auto;
+        }
+        .third{
+          grid-template-columns: repeat(1,1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="box">
+          <img src="images/A.jpg" alt="" />
+        </div>
+        <div class="box">
+          <div>
+            <img src="images/B.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/C.jpg" alt="" />
+          </div>
+          <div class="second">
+            <img src="images/D.jpg" alt="" />
+            <img src="images/E.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div>
+            <img src="images/F.jpg" alt="" />
+          </div>
+          <div class="third">
+            <img src="images/G.jpg" alt="" />
+            <img src="images/G.jpg" alt="" />
+            <img src="images/G.jpg" alt="" />
+            <img src="images/G.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/H.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

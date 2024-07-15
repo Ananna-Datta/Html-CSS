@@ -1,0 +1,13 @@
+.parent{
+    background-color: #FFEBCF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.child{
+    background-color: #B4DAE2;
+    padding: 10px 10px;
+    height: 10px;
+    border: 10px solid transparent;
+    margin: 10px;
+}
